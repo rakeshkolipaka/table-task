@@ -14,7 +14,7 @@
 <body>
     <div class="container" id="formContainer">
         <h1 id="header1">Employee Details List</h1>
-        <a href="addNew.html"><button type="button" class="btn btn-primary" id="addNew">Add New</button></a> 
+       <button type="button" class="btn btn-primary" id="addNew" data-toggle='modal' data-target='#myModal1'>Add New</button>
             <div class="row">
               <div class="col-md-8"></div>
               <div class="col-md-4"><p class="bg-success" id="deleted">Data is deleted successfully</p></div>
@@ -69,6 +69,64 @@
                      <button type="button" class="btn btn-primary" data-dismiss="modal" id="submit2" >submit</button>
                     <button type="button" class="btn btn-default" id="reload" >Reset</button>
                 </form>             
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel1">Add new Use Details</h4>
+          </div>
+          <div class="modal-body">
+               <form id="addNewRow">
+                <div class="form-group">
+                    <label for="userId">User Id:</label>
+                    <textarea type="text" class="form-control" id="userId"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <textarea type="text" class="form-control" id="title"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="body">Body</label>
+                    <textarea type="text" class="form-control" id="body"></textarea>
+                </div>
+      
+                 <button type="button" class="btn btn-primary" data-dismiss="modal" id="submit" >submit</button>
+                <button type="button" class="btn btn-default" id="reload1" >Reset</button>
+            </form>             
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel1">Change Details</h4>
+          </div>
+          <div class="modal-body">
+               <form id="editD">
+                <div class="form-group">
+                    <label for="userIdEdit">User Id:</label>
+                    <textarea type="text" class="form-control" id="userIdEdit"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="titleEdit">Title:</label>
+                    <textarea type="text" class="form-control" id="titleEdit"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="bodyEdit">Body</label>
+                    <textarea type="text" class="form-control" id="bodyEdit"></textarea>
+                </div>
+      
+                 <button type="button" class="btn btn-primary" id="submit1" data-dismiss="modal" >submit</button>
+                <button type="button" class="btn btn-default" id="reload2" >Reset</button>
+            </form>             
           </div>          
         </div>
       </div>
