@@ -1,1 +1,23 @@
-style.css
+.container .well {
+    background-color:#337ab7;
+    border-color: #2e6da4;
+    color:#fff;
+
+}
+#deleted{
+	display:none;
+	 background-color:#337ab7;
+	  color:#fff;
+}
+.header{
+ background-color:#337ab7;
+	  color:#fff;
+	  font-size: 14;
+	  font-style: bold;
+	  height:40px;
+	  padding-top: 10px;
+	  
+}
+#delet{
+	margin-left: 1px;
+}
